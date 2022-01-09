@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:ital,wght@1,300&display=swap");
+/* .ring
+{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background: transparent;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #fff000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #fff000;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    left: 1%;
+}
+.ring::before
+{
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #fff000;
+    border-right: 3px solid #fff000;
+    border-radius: 50%;
+    animation: animatecircle 0.5s linear infinite;
+} */
+
+@keyframes animatecircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+#glass {
+  position: relative;
+  top: 200px;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 75%;
+  border: 10px solid #aafdfd;
+  border-radius: 1px;
+  background-color: rgb(154, 222, 243, 0.35);
+  box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.3);
+  font-family: "Lato";
+  font-size: 269%;
+  font-weight: lighter;
+  height: 200px;
+}
+
+.tx {
+  position: absolute;
+  top: 10%;
+  right: 22%;
+}
+
+#inputsentence {
+  position: absolute;
+  top: 65%;
+  right: 30%;
+  width: 40%;
+  height: 21%;
+  border: 2.5px black solid;
+  border-radius: 5px;
+}
+
+#inputsentence:focus{
+  border: 3px white solid;
+}
+
+.dataholder {
+  position: relative;
+  top: 420px;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 75%;
+  border: 10px;
+  border-radius: 0px;
+  background-color: rgba(189, 13, 212, 0.432);
+  box-shadow: 0px 0px 0px 15px rgba(255, 255, 255, 0.5);
+  font-family: "Comfortaa";
+  color: white;
+  padding-left: 10px;
+  padding-top: 12.5px;
+  font-size: 200%;
+  font-weight: lighter;
+  animation: datanim 45s infinite ease-in-out;
+}
+
+@keyframes datanim {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.mainbutton {
+  position: absolute;
+  right: 7%;
+  top: 66%;
+  font-size: 25px;
+  font-family: monospace;
+  background-color: orange;
+  padding: 6.7px;
+  transition: all 0.3s ease-in-out;
+  border: 3px solid yellow;
+}
+.mainbutton:hover {
+  cursor: pointer;
+  background-color: white;
+  color: orange;
+  font-size: 30px;
+  top: 64%;
+}
+
+body {
+  background-image: linear-gradient(
+    -90deg,
+    rgb(52, 224, 46),
+    rgb(221, 129, 233),
+    rgb(72, 171, 228),
+    rgb(238, 70, 70)
+  );
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-size: 400% 400%;
+
+  animation: gradientanim 45s ease-in-out infinite;
+}
+
+@keyframes gradientanim {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@media (max-width: 590px){
+  .mainbutton{
+    right: 3.5%;
+  }
+}
+
+@media (max-width: 533px){
+  .mainbutton{
+    font-size: 20.5px;
+    right: 1%;
+  }
+}
+
+@media (min-width: 1040px){
+  .mainbutton{
+    font-size: 27px;
+    right: 12%;
+  }
+}
+
+@media (max-width: 385px){
+  .mainbutton{
+    font-size: 17px;
+    right: 0.3%;
+  }
+}
+
+@media (max-width: 484px){
+  #glass{
+    font-size: 220%;
+  }
+  .mainbutton{
+    font-size: 14px;
+    right: 0.3%;
+  }
+}
+
+@media (max-width: 396px){
+  #glass{
+    font-size: 190%;
+  }
+  .mainbutton{
+    font-size: 12px;
+    right: 0.3%;
+  }
+}
