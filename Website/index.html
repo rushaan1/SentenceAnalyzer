@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentence Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/universal-sentence-encoder"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+</head>
+
+<body>
+  <br />
+  <!-- <nav>
+    <a href="#" class="hv">Home</a>
+    <a href="#" class="main">Tense Prediction</a>
+    <a href="#" class="hv">AI Explained</a>
+    <a href="#" class="hv">Examples Used</a>
+    <a href="#" class="hv">About Me</a>
+  </nav> -->
+  <div id="glass">
+<!--     <div class="ring" id="prediction">Loading</div> -->
+
+    <div class="tx"> Enter the Sentence below to analyze!</div>
+    <button onclick="listener()" class="mainbutton">Analyze</button>
+    <input type="text" id="inputsentence" role="textbox"></input>
+  </div>
+
+  <!-- <button onclick="predicting()">Predict the tense</button>
+  <input type="text" -->
+  <div class="dataholder">
+    <div id="type">Sentence Type: </div>
+    <br>
+    <div id="tense">Tense: </div>
+    <br>
+    <div id="toxic">Toxicity: </div>
+    <br>
+    <div id="sentiment">Sentiment: </div>
+    <br>
+    <div id="letters">Letters: </div>
+    <br>
+    <div id="caps">Capital Letters</div>
+    <br>
+    <div id="words">Words: </div>
+    <br>
+    <div id="punctuations">Punctuations: </div>
+  </div>
+  <br>
+  <br>
+  <div id="stats"></div>
+</body>
+
+</html>
+
+<!--prediction for button & inputsentence
+    onclick: prediction()
+-->
