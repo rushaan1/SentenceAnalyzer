@@ -14,10 +14,10 @@ async function listener() {
     prompt.innerHTML = "Please Provide Sentence";
     return;
   }
-  // const sentence = input.value
+  const sentence = input.value
   (async () => {
     const rawResponse = await fetch(
-      "monke (not gonna reveal lol)",
+      "[API_URL]",
       {
         method: "POST",
         headers: {
